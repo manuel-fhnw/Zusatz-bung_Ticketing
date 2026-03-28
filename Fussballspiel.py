@@ -27,7 +27,7 @@ class Fussballspiel:
 
     def __str__(self):
         return (
-            f"{self.team_home.name} vs {self.team_away.name} (Super League)/n"
-            f"Datum: {self.datum}, Ort: {self.ort}/n"
-            f"Tickets: {self.tickets} / {self.max_tickets}"
+            f"{self.team_home.name} vs {self.team_away.name} (Super League) \n"
+            f"Datum: {self.datum}, Ort: {self.ort}\n"
+            f"Tickets: {len(self.tickets)} / {self.max_tickets}"
         )

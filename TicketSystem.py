@@ -37,5 +37,5 @@ class TicketSystem:
             auslastung = len(event.tickets) / event.max_tickets * 100
             print(
                 f"{event.team_home.name} vs {event.team_away.name}"
-                f"am {event.datum} - Auslastung: {auslastung:.1f}%"
+                f" am {event.datum} - Auslastung: {auslastung:.1f}%"
             )
