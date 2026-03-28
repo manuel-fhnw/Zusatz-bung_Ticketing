@@ -1,6 +1,3 @@
-from Fussballspiel import Fussballspiel
-
-
 class TicketSystem:
     def __init__(self):
         self.events = []

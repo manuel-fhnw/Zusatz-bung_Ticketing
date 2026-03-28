@@ -1,6 +1,3 @@
-from datetime import date
-
-
 class Team:
     def __init__(self, name: str, stadt: str, gruendungsjahr: int):
         self.name = name
