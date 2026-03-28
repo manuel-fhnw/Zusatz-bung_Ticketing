@@ -1,11 +1,11 @@
-import Kunden
+from Kunde import Kunde
 import uuid
 
 
-class Ticket(Kunden):
-    def __init__(self, ticket_id: int, besitzer: Kunden, preis: float, kategorie: str):
+class Ticket:
+    def __init__(self, besitzer: Kunde, preis: float, kategorie: str):
+        self.ticket_id = uuid.uuid4()
         self.besitzer = besitzer
-        self.ticket_id = uuid.uuid5()
         self.preis = preis
         self.kategorie = kategorie
 
