@@ -1,5 +1,5 @@
 class Kunde:
-    def __init__(self, vorname, nachname, mail):
+    def __init__(self, vorname: str, nachname: str, mail: str):
         if "@" not in mail:
             raise ValueError("Ungültige E-Mail-Adresse")
 
