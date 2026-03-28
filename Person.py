@@ -1,4 +1,4 @@
-class Kunde:
+class Person:
     def __init__(self, vorname: str, nachname: str, mail: str):
         if "@" not in mail:
             raise ValueError("Ungültige E-Mail-Adresse")
@@ -15,7 +15,7 @@ class Kunde:
         return f"{self.name} ({self.mail})"
 
     def __eq__(self, other):
-        return isinstance(other, Kunde) and self.mail == other.mail
+        return isinstance(other, Person) and self.mail == other.mail
 
     def __hash__(self):
         return hash(self.mail)

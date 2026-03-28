@@ -1,9 +1,9 @@
-from Kunde import Kunde
+from Person import Person
 import uuid
 
 
 class Ticket:
-    def __init__(self, besitzer: Kunde, preis: float, kategorie: str):
+    def __init__(self, besitzer: Person, preis: float, kategorie: str):
         self.ticket_id = uuid.uuid4()
         self.besitzer = besitzer
         self.preis = preis
